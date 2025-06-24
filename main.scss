@@ -1,0 +1,70 @@
+//import for Outfit font from Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+// Colors Variables
+$slate900: #1f314f;
+$slate500: #68778d;
+$slate300: #d5e1ef;
+$white: #ffffff;
+
+//Typography
+%text1 {
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  line-height: 120%;
+  font-weight: bold;
+}
+%text2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  line-height: 140%;
+  font-weight: 100;
+}
+
+//flex extention
+%flexer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: $slate300;
+  @extend %flexer;
+  .card {
+    width: 320px;
+    height: 499px;
+    background-color: $white;
+    border-radius: 20px;
+    padding: 16px;
+    img {
+      width: 288px;
+      border-radius: 10px;
+    }
+    .text-area {
+      @extend %flexer;
+      justify-content: space-between;
+      padding: 0 16px;
+      width: 288px;
+      height: 131px;
+      text-align: center;
+      margin-top: 24px;
+      margin-bottom: 40px;
+      h1 {
+        @extend %text1;
+        color: $slate900;
+      }
+      p {
+        @extend %text2;
+        color: $slate500;
+      }
+    }
+  }
+}

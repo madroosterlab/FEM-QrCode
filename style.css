@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+body .card .text-area h1 {
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+body .card .text-area p {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  line-height: 140%;
+  font-weight: 100;
+}
+
+body .card .text-area, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #d5e1ef;
+}
+body .card {
+  width: 320px;
+  height: 499px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 16px;
+}
+body .card img {
+  width: 288px;
+  border-radius: 10px;
+}
+body .card .text-area {
+  justify-content: space-between;
+  padding: 0 16px;
+  width: 288px;
+  height: 131px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+body .card .text-area h1 {
+  color: #1f314f;
+}
+body .card .text-area p {
+  color: #68778d;
+}
+
+/*# sourceMappingURL=style.css.map */
